@@ -32,6 +32,7 @@
 ---
 
 ## 📁 Структура проекта
+```
 Machine-Learning-Iris/
 │
 ├── 📂 AdalineModel/ # Адаптивный линейный нейрон
@@ -46,7 +47,7 @@ Machine-Learning-Iris/
 ├── 📄 plot_decision_regions.py # Утилита для построения границ
 ├── 📄 fastTest.py # Для быстрого самостоятельного теста
 └── 📄 README.md # Документация проекта
-
+```
 
 ---
 
