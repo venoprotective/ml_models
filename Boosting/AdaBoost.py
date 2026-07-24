@@ -27,7 +27,7 @@ class AdaBoost:
          return weights[y != tree_predictions] * np.exp(a_j_coeff)
             
     def fit(self, X, y):
-        n_samples = len(np.unique(y))
+        n_samples = len(y)
         weights = np.ones(n_samples) / n_samples
         self.amount_classes = len(np.unique(y.values))
         for _ in range(self.n_estimators):
