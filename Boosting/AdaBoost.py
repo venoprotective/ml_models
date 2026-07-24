@@ -55,8 +55,7 @@ class AdaBoost:
             aj = self.weights[j]
             Cj = self.models[j]
             predictions = Cj.predict(X)
-            for i in range(len(X)):
-                votes[i, predictions[i]] += aj
+            votes[np.arange(len(X)), predictions] += self.weights[j]
 
         return np.argmax(votes, axis=1)
 
