@@ -35,7 +35,7 @@ class AdaBoost:
         weights = np.ones(n_samples) / n_samples
         self.amount_classes = len(np.unique(y))
         for _ in range(self.n_estimators):
-            tree = DecisionTreeClassifier(max_depth=3, random_state=self.random_state)
+            tree = DecisionTreeClassifier(max_depth=1, random_state=self.random_state)
             tree = tree.fit(X, y, sample_weight=weights)
             tree_predictions = tree.predict(X)
             epsilon = np.sum(weights[tree_predictions != y])
