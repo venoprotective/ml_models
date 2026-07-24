@@ -27,9 +27,9 @@ class AdaBoost:
          return weights[y != tree_predictions] * np.exp(a_j_coeff)
             
     def fit(self, X, y):
-        n_samples = np.unique(y)
+        n_samples = len(np.unique(y))
         weights = np.ones(n_samples) / n_samples
-        self.amount_classes = len(np.unique(y))
+        self.amount_classes = len(np.unique(y.values))
         for _ in range(self.n_estimators):
             tree = DecisionTreeClassifier(max_depth=3, random_state=self.random_state)
             tree = tree.fit(X, y, sample_weight=weights)
