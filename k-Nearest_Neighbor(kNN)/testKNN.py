@@ -13,4 +13,6 @@ kModel.fit(X_train_std, y_train)
 
 y_pred = kModel.predict(X_combined_std)
 
+plot_decision_regions(X_combined_std, y_combined, classifier=kModel, test_idx=range(105,150))
+plt.show()
 print(accuracy_score(y_combined, y_pred))
