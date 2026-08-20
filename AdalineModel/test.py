@@ -61,7 +61,7 @@ sc_x = StandardScaler()
 sc_y = StandardScaler()
 X_std = sc_x.fit_transform(X)
 y_std = sc_y.fit_transform(y[:, np.newaxis]).flatten()
-lr = LinearRegression(eta=0.1)
+lr = LinearRegressionGD(eta=0.1)
 lr.fit(X_std, y_std) 
 
 # plt.plot(range(1, lr.n_iter + 1), lr.losses_)
@@ -86,7 +86,9 @@ def lin_regplot(X, y, model):
 from sklearn.linear_model import LinearRegression 
 
 slr = LinearRegression()
- 
+slr.fit(X, y)
+lin_regplot(X, y, slr)
+plt.show()
 # test adaline with gradient descent 
 # comparison of learning speed
 
