@@ -13,12 +13,12 @@ X, y = make_blobs(n_samples=150,
                   random_state=0)
 
 
-plt.scatter(X[:, 0], 
-            X[:, 1],
-            c='red',
-            marker='o',
-            edgecolor='white',
-            s=50)
-plt.xlabel('feature 1')
-plt.ylabel('feature 2')
-plt.show()
+# plt.scatter(X[:, 0], 
+#             X[:, 1],
+#             c='red',
+#             marker='o',
+#             edgecolor='white',
+#             s=50)
+# plt.xlabel('feature 1')
+# plt.ylabel('feature 2')
+# plt.show()
