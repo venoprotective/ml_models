@@ -80,8 +80,8 @@ Machine-Learning-Iris/
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/yourusername/Machine-Learning-Iris.git
-cd Machine-Learning-Iris
+git clone https://github.com/venoprotective/ml_models.git
+cd ml_models
 
 # Установка зависимостей
 pip install numpy pandas matplotlib scikit-learn
