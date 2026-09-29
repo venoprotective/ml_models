@@ -22,11 +22,11 @@ row_clusters = linkage(df.values,
 #                    columns=['row label 1', 'row label 2', 'distance', 'no. of items in clust.'],
 #                    index = [f'cluster {(i + 1)}' for i in range(row_clusters.shape[0])])
 
-set_link_color_palette(['black'])
-row_dendr = dendrogram(row_clusters, 
-                       labels=labels
-                       ,color_threshold=np.inf)
+# set_link_color_palette(['black'])
+# row_dendr = dendrogram(row_clusters, 
+#                        labels=labels)
+#                     #    ,color_threshold=np.inf)
 
-plt.tight_layout()
-plt.ylabel('euclidean distance')
-plt.show()
+# plt.tight_layout()
+# plt.ylabel('euclidean distance')
+# plt.show()
